@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import logo from "../images/sjclogo.png";
 import "../styles/nav.css";
 import ContactForm from "./ContactForm";
-import { Link } from "react-router-dom";
 
 function Navigation() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -19,7 +18,7 @@ function Navigation() {
         <ul className="navbar-links">
           <li>
             <a
-              href=""
+              href=".navbar-div"
               className="navbar-link link__hover--effect link__hover--effect--white"
             >
               Home
@@ -34,12 +33,9 @@ function Navigation() {
             </a>
           </li>
           <li>
-            <a
-              href=""
-              className="navbar-link link__hover--effect link__hover--effect--white"
-            >
+            <button className="navbar-link link__hover--effect link__hover--effect--white">
               Gallery
-            </a>
+            </button>
           </li>
           <li>
             <a
@@ -50,12 +46,12 @@ function Navigation() {
             </a>
           </li>
           <li>
-            <a
+            <button
               onClick={toggleModal}
               className="navbar-link link__hover--effect link__hover--effect--white"
             >
               Contact Us
-            </a>
+            </button>
           </li>
         </ul>
       </div>

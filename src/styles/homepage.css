@@ -297,6 +297,10 @@ right: -40px;
       .fade-out {
         animation: fadeOut 0.1s forwards;
       }
+
+      .btn--arrows{
+        background-color: inherit;
+      }
       
 
       /* modal */

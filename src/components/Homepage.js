@@ -52,6 +52,7 @@ function Homepage() {
   };
 
   useEffect(() => {
+    const currentCards = cardsRef.current;
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -65,10 +66,10 @@ function Homepage() {
       }
     );
 
-    cardsRef.current.forEach((card) => observer.observe(card));
+    currentCards.forEach((card) => observer.observe(card));
 
     return () => {
-      cardsRef.current.forEach((card) => observer.unobserve(card));
+      currentCards.forEach((card) => observer.unobserve(card));
     };
   }, []);
 
@@ -80,13 +81,13 @@ function Homepage() {
 
   return (
     <main>
-      <section className="landing-div">
+      <section className="landing-div" id="landing-div">
         <div className="landing-text">
           <h3 className="landing-text--header">
             {" "}
             SPECIALIST'S IN CAR AUDIO, SECURITY AND CUSTOMISATIONS
           </h3>
-          <a className="landing-btn" href="#">
+          <a className="landing-btn" href="#services">
             EXPLORE NOW
           </a>
           <div className="brands-div">
@@ -221,9 +222,9 @@ function Homepage() {
         </div>
 
         <div className="cards animation">
-          <a onClick={handlePrevClick}>
+          <button onClick={handlePrevClick} className="btn--arrows">
             <AiFillLeftCircle className="icon arrows" />
-          </a>
+          </button>
           <div ref={addCardRef} className="container">
             <div className={`card card-shadow ${animationClass}`}>
               <div className="card__image-container"></div>
@@ -238,9 +239,9 @@ function Homepage() {
               </div>
             </div>
           </div>
-          <a onClick={handleNextClick}>
+          <button onClick={handleNextClick} className="btn--arrows">
             <AiFillRightCircle className="icon arrows" />
-          </a>
+          </button>
         </div>
       </section>
       <ContactForm />

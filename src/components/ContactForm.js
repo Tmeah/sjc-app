@@ -8,14 +8,13 @@ import {
   FaLocationArrow,
   FaInstagram,
   FaFacebook,
-  FaMapPin,
   FaMapMarked,
 } from "react-icons/fa";
 // import emailjs from "emailjs-com";
 
 const ContactForm = ({ onClose, isModalOpen }) => {
   const [loading, setLoading] = useState(false);
-  const [success, setSuccess] = useState(false);
+  const [success /*setSuccess] */] = useState(false);
 
   const handleContact = (event) => {
     event.preventDefault();
@@ -67,20 +66,25 @@ const ContactForm = ({ onClose, isModalOpen }) => {
             </div>
             <div className="contact__links--div">
               <ul className="contact__links">
-                <a href="" className="contact__link">
+                <a href="tel:01633 276682" className="contact__link">
                   <li className="contact__link--li">
                     <FaPhone className="contact__icon"></FaPhone>
                     01633 276682
                   </li>
                 </a>
               </ul>
-              <a href="#" className="contact__link">
+              <a href="mailto:info@sjconcepts.co.uk" className="contact__link">
                 <li className="contact__link--li">
                   <FaEnvelope className="contact__icon"></FaEnvelope>
                   info@sjconcepts.co.uk{" "}
                 </li>
               </a>
-              <a href="" className="contact__link">
+              <a
+                href="http://maps.google.com/?q=Unit 1 Leeway Court Leeway Industrial Estate Newport NP194SJ"
+                className="contact__link"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <li className="contact__link--li">
                   <FaLocationArrow className="contact__icon"></FaLocationArrow>
                   Unit 1 Leeway Court Leeway Industrial Estate Newport NP194SJ{" "}

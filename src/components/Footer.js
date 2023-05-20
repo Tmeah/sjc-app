@@ -15,12 +15,9 @@ function Footer() {
       <div className="footer-links-div">
         <ul className="footer-links">
           <li>
-            <a
-              href="#"
-              className="footer-link link__hover--effect link__hover--effect--white"
-            >
+            <button className="footer-link link__hover--effect link__hover--effect--white">
               Home
-            </a>
+            </button>
           </li>
           <li>
             <a
@@ -31,12 +28,12 @@ function Footer() {
             </a>
           </li>
           <li>
-            <a
+            <button
               href=""
               className="footer-link link__hover--effect link__hover--effect--white"
             >
               Gallery
-            </a>
+            </button>
           </li>
           <li>
             <a
@@ -47,12 +44,12 @@ function Footer() {
             </a>
           </li>
           <li>
-            <a
+            <button
               onClick={toggleModal}
               className="footer-link link__hover--effect link__hover--effect--white"
             >
               Contact Us
-            </a>
+            </button>
           </li>
         </ul>
         <span className="copyright">
@@ -61,6 +58,7 @@ function Footer() {
             href="https://tausifmeah.co.uk/"
             target="_blank"
             className="footer-link--t"
+            rel="noreferrer"
           >
             <u>Tausif Meah.</u>
           </a>
