@@ -7,10 +7,8 @@ import Footer from "./components/Footer";
 import ContactForm from "./components/ContactForm";
 import "@fontsource/roboto";
 import "@fontsource/nunito";
-import { PrismicRichText, useFirstPrismicDocument } from "@prismicio/react";
 
 function App() {
-  const [document] = useFirstPrismicDocument();
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const toggleModal = () => {
