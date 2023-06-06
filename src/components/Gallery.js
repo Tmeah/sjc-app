@@ -23,12 +23,12 @@ function Gallery() {
 
   return (
     <section className="section2" id="gallery">
-      <div className="s2-title clients">
-        <p className="red">Gallery</p>
-        <h2>Here are some images from our gallery:</h2>
+      <div className="gallery-title">
+        <p className="red gallery-header">Gallery</p>
+        <h2 className="gallery-para">Check Out Our Latest Work</h2>
       </div>
 
-      <div className="cards">
+      <div className="cards car-cards">
         {galleries.map((gallery) => (
           <div key={gallery.sys.id} className="container-pics">
             <div className="pic--card">
