@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { HashLink as Link } from "react-router-hash-link"; // import HashLink from react-router-hash-link
 import logo from "../images/sjclogo.png";
 import "../styles/nav.css";
 import ContactForm from "./ContactForm";
@@ -17,41 +18,50 @@ function Navigation() {
       <div className="navbar-links-div">
         <ul className="navbar-links">
           <li>
-            <a
-              href=".navbar-div"
+            <Link
+              to="/"
+              smooth
               className="navbar-link link__hover--effect link__hover--effect--white"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#services"
+            <Link
+              to="/#services"
+              smooth
               className="navbar-link link__hover--effect link__hover--effect--white"
             >
               Services
-            </a>
+            </Link>
           </li>
           <li>
-            <button className="navbar-link link__hover--effect link__hover--effect--white">
+            <Link
+              to="/gallery"
+              smooth
+              className="navbar-link link__hover--effect link__hover--effect--white"
+            >
               Gallery
-            </button>
+            </Link>
           </li>
           <li>
-            <a
-              href="#about-us"
+            <Link
+              to="/#about-us"
+              smooth
               className="navbar-link link__hover--effect link__hover--effect--white"
             >
               About Us
-            </a>
+            </Link>
           </li>
           <li>
-            <button
+            <Link
+              to="/#contact-us"
               onClick={toggleModal}
+              smooth
               className="navbar-link link__hover--effect link__hover--effect--white"
             >
               Contact Us
-            </button>
+            </Link>
           </li>
         </ul>
       </div>

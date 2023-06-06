@@ -1,12 +1,16 @@
 import React, { useState } from "react";
+import { HashLink as Link } from "react-router-hash-link"; // import HashLink
 import logo from "../images/sjclogo-removebg.png";
 import "../styles/footer.css";
+
 import ContactForm from "./ContactForm";
+
 function Footer() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
+
   return (
     <div className="footer-div">
       <div className="footer-logo-div">
@@ -15,41 +19,50 @@ function Footer() {
       <div className="footer-links-div">
         <ul className="footer-links">
           <li>
-            <button className="footer-link link__hover--effect link__hover--effect--white">
+            <Link
+              to="/"
+              smooth
+              className="footer-link link__hover--effect link__hover--effect--white"
+            >
               Home
-            </button>
+            </Link>
           </li>
           <li>
-            <a
-              href="#services"
+            <Link
+              to="/#services"
+              smooth
               className="footer-link link__hover--effect link__hover--effect--white"
             >
               Services
-            </a>
+            </Link>
           </li>
           <li>
-            <button
-              href=""
+            <Link
+              to="/gallery"
+              smooth
               className="footer-link link__hover--effect link__hover--effect--white"
             >
               Gallery
-            </button>
+            </Link>
           </li>
           <li>
-            <a
-              href="#about-us"
+            <Link
+              to="/#about-us"
+              smooth
               className="footer-link link__hover--effect link__hover--effect--white"
             >
               About Us
-            </a>
+            </Link>
           </li>
           <li>
-            <button
+            <Link
+              to="/#contact-us"
               onClick={toggleModal}
+              smooth
               className="footer-link link__hover--effect link__hover--effect--white"
             >
               Contact Us
-            </button>
+            </Link>
           </li>
         </ul>
         <span className="copyright">
