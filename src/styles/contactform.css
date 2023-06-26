@@ -330,11 +330,11 @@ button{
 
   .modal__about{
     margin-top: 0px;
-    padding: 30px 72px;
+    padding: 10px 72px;
   }
 
   .modal__contact{
-    padding: 92px 72px;
+    padding: 60px 72px;
   }
  
 
@@ -388,12 +388,7 @@ button{
     padding: 8px 16px;
   }
 
-  .modal__exit {
-    top: 10px;
-    right: 15px;
-    font-size: 24px;
-  }
-
+ 
   .contact__icon {
     font-size: 16px;
   }
@@ -412,7 +407,7 @@ button{
 
   .modal__exit {
     position: absolute;
-    top: 20px;
+    top: 60px;
     right: 44px;
     color: #ffffff;
     font-size: 28px;
