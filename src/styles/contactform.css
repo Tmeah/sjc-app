@@ -330,11 +330,9 @@ button{
 
   .modal__about{
     margin-top: 0px;
-    padding: 10px 72px;
   }
 
   .modal__contact{
-    padding: 60px 72px;
   }
  
 
@@ -407,7 +405,7 @@ button{
 
   .modal__exit {
     position: absolute;
-    top: 30px;
+    top: 20px;
     right: 44px;
     color: #ffffff;
     font-size: 28px;
