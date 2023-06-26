@@ -223,7 +223,7 @@ function Homepage() {
           <button onClick={handlePrevClick} className="btn--arrows">
             <AiFillLeftCircle className="icon arrows" />
           </button>
-          <div ref={addCardRef} className="container">
+          <div ref={addCardRef} className="container test-container">
             <div className={`card card-shadow ${animationClass}`}>
               <div className="card__image-container"></div>
               <div className="card__content">

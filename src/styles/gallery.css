@@ -94,3 +94,53 @@
   color: white;
   font-size: 32px;
 }
+
+/* Your existing CSS */
+/* ... */
+
+@media only screen and (max-width: 767px) {
+
+  .container-pics{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pic--card{
+    width: 300px;
+  }
+  .pic-card--img {
+    width: 100%;
+    height: auto;
+    margin:12px 0px ;
+    font-size: 20px;
+  }
+
+  .second-content {
+    font-size: 1.4rem;
+  }
+
+  .insta-logo{
+    font-size: 26px;
+  }
+
+  .car-cards {
+    flex-direction: column;
+  }
+
+  .container-pics {
+    width: 100%;
+  }
+
+  .gallery-title{
+    padding: 20px;
+  }
+
+  .gallery-header{
+    font-size: 28px;
+  }
+
+  .gallery-para{
+    font-size: 16px;
+  }
+}

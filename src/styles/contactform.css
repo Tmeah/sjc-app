@@ -309,3 +309,126 @@ textarea {
 button{
  cursor: pointer;
 }
+/* Your existing CSS */
+/* ... */
+
+@media only screen and (max-width: 767px) {
+
+  .modal {
+    padding: 20px;
+  }
+
+    .modal-holder {
+    flex-direction: column;
+  }
+
+  .modal__half {
+    width: 100%;
+    height: auto; /* adjust as needed */
+  }
+
+
+  .modal__about{
+    margin-top: 0px;
+    padding: 20px 72px;
+  }
+
+  .modal__contact{
+    padding: 66px 72px;
+  }
+ 
+
+  
+
+  .modal__about,
+  .modal__contact {
+    width: 100%;
+  position: relative;
+  border-radius: 24px;
+  margin: 0px 
+  }
+
+  .modal__title {
+    font-size: 20px;
+  }
+
+  .modal__title--about {
+    font-size: 24px;
+  }
+
+  .modal__subtitle {
+    font-size: 12px;
+  }
+
+  .modal__para {
+    font-size: 14px;
+  }
+
+  .form__item {
+    margin-bottom: 10px;
+  }
+
+  .form__item--label{
+    font-size: 16px;
+
+  }
+
+  input,
+  textarea {
+    font-size: 14px;
+    width: 90%;
+  }
+
+  textarea{
+    height: 20px;
+  }
+
+  .form__submit {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .modal__exit {
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+  }
+
+  .contact__icon {
+    font-size: 16px;
+  }
+  
+
+  .contact__link--li {
+    margin: 6px 0px;
+    padding: 8px 6px;
+    font-size: 12px;
+  }
+
+  .modal__language{
+    padding: 0;
+    width: 20%;
+  }
+
+  .modal__exit {
+    position: absolute;
+    top: 10px;
+    right: 44px;
+    color: #ffffff;
+    font-size: 28px;
+    z-index: 100;
+    cursor: pointer;
+  }
+
+  .input{
+    font-size: 12px;
+  }
+
+  .form__submit{
+    width: 180px;
+    margin-top: 4px;
+    padding: 4px;
+  }
+
+
+}
